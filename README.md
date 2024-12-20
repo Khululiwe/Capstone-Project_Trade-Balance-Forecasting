@@ -64,12 +64,29 @@ Data cleaning and filtering were critical to preparing the dataset for analysis.
 
 ## 6. Exploratory Data Analysis (EDA)
 
-Exploratory Data Analysis (EDA) provided insights into the structure and relationships within the balance trade and GDP data. Key steps included:
+Exploratory Data Analysis (EDA) offered comprehensive insights into the structure and relationships within South Africa's trade balance and GDP data. Key findings and steps included:
 
-- Distribution Analysis: Visualizing the distribution of key indicators like trade balance, GDP, and growth rates.
-- Correlation Analysis: Examining the relationships between variables to identify patterns and dependencies.
-- Time Series Analysis: Understanding trends over time, such as GDP growth or fluctuations in trade balance.
-- Country-Level Comparisons: Comparing metrics across countries or regions to identify outliers or trends.
+- Distribution Analysis: Histograms and box plots highlighted the distribution of trade balances and GDP. The trade balance data exhibited a left-skewed distribution, with most values clustering near zero but with significant deficits for certain trading partners.
+
+- GDP Analysis
+
+  - Summary Statistics: GDP data (2004–2023) showed steady growth, with notable turning points in 2011, 2017, and 2021.
+  - Trends Visualization: A line plot revealed GDP’s upward trajectory over two decades.
+
+- Correlation Analysis: Relationships among variables, such as trade balances across partners and years, were explored using scatter plots and correlation matrices.
+
+- Outlier Detection: Outliers were identified using the interquartile range (IQR) method, with 1,633 outliers detected across trade balances. Key contributors included the "World" partner (total of all partners) and "Area NES" (miscellaneous regions).
+  Positive and negative outliers totaled 773 and 860, respectively.
+
+- Trade Partner Analysis: Histograms and average balance calculations revealed that South Africa's trade data is predominantly stable, with a few extreme deficits and surpluses.
+  The "World" partner’s trade balance aligned with the total of all trading partners, confirming its comprehensive nature.
+
+- Trend Analysis: Top & Bottom Trading Partners: Bar plots identified the top 5 partners with the highest surpluses and the bottom 5 with the largest deficits.
+
+- Absolute Balances: Partners with the most significant absolute trade balances were visualized to highlight both surpluses and deficits.
+
+- Country-Level Comparisons: Comparisons across countries and regions highlighted key trading trends, outliers, and potential areas for economic improvement.
+  The left-skewed trade balance distribution emphasized reliance on imports from specific partners, signaling areas requiring policy focus for sustainable growth.
 
 ## 7. Modelling
 
@@ -77,8 +94,6 @@ Various statistical and machine learning models were used to analyze and predict
 
 - Linear Regression: Establishing baseline relationships between variables.
 - Time Series Forecasting: Using models like ARIMA to predict future trends based on historical data.
-- Clustering Analysis: Grouping countries or time periods with similar characteristics.
-- Feature Engineering: Creating derived metrics like trade-to-GDP ratio or GDP per capita for enhanced analysis.
 
 ## 8. Final Model
 
@@ -92,14 +107,20 @@ The selected model(s) demonstrated strong performance in explaining the variance
 
 ## 9. Conclusion and Future Work
 
-The analysis of trade balance and GDP data offers valuable insights into economic trends and dependencies. This project highlights the importance of clean data and robust models in economic forecasting.
+This project underscores the critical role of clean data and advanced models in understanding economic trends and making accurate forecasts.
+The analysis of trade balance and GDP data has provided valuable insights into economic dependencies and potential future trajectories.
 
 Future Work:
 
-Dynamic Updates: Incorporate real-time data for more up-to-date forecasting and analysis.
-Advanced Econometric Models: Explore techniques like VAR (Vector Autoregression) for multivariate time series analysis.
-Scenario Analysis: Integrate scenario-based simulations to predict the impact of global events on trade and GDP.
-Interactive Visualization: Develop dashboards for stakeholders to interactively explore the data and findings.
+- Dynamic Updates: Incorporate real-time data to enable up-to-date forecasting and improve decision-making.
+
+- Advanced Econometric Models: Explore models like VAR (Vector Autoregression) and structural equation modeling for multivariate time-series analysis.
+
+- Scenario Analysis: Develop simulations to assess the impact of global events (e.g., economic sanctions, trade agreements) on trade balance and GDP trends.
+
+- Interactive Visualization: Build user-friendly dashboards that allow stakeholders to interactively explore the data, forecasts, and insights for better engagement and communication.
+
+- By addressing these future work items, the project can achieve greater scalability and provide more impactful tools for economic analysis.
 
 ## 10. References
 
