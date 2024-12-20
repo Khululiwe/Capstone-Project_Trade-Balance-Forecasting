@@ -55,39 +55,54 @@ Both datasets were loaded into pandas DataFrames for further analysis. And the f
 
 ## 5. Data Cleaning and Filtering
 
-Data cleaning involves removing noise and irrelevant information from the dataset to improve model accuracy. This includes:
+Data cleaning and filtering were critical to preparing the dataset for analysis. This process involved:
 
-- Standardizing column names
-- Handling missing values
+- Standardizing Column Names: Renaming columns to ensure consistency and ease of processing.
+- Handling Missing Values: Addressing missing data by imputing values or removing rows/columns where necessary.
+- Outlier Detection: Identifying and treating outliers to reduce their impact on analysis.
+- Filtering Relevant Data: Retaining only essential features for meaningful insights and removing noise.
 
 ## 6. Exploratory Data Analysis (EDA)
 
-EDA helps in understanding the structure of the data and the relationships between different features. Key steps include:
+Exploratory Data Analysis (EDA) provided insights into the structure and relationships within the balance trade and GDP data. Key steps included:
 
-- Visualizing the distribution of categories.
-- Examining word frequency distributions.
-- Analyzing the length of articles.
+- Distribution Analysis: Visualizing the distribution of key indicators like trade balance, GDP, and growth rates.
+- Correlation Analysis: Examining the relationships between variables to identify patterns and dependencies.
+- Time Series Analysis: Understanding trends over time, such as GDP growth or fluctuations in trade balance.
+- Country-Level Comparisons: Comparing metrics across countries or regions to identify outliers or trends.
 
 ## 7. Modelling
 
-Various classification models were trained and evaluated:
+Various statistical and machine learning models were used to analyze and predict trade balance and GDP trends. Key approaches included:
 
-- **Logistic Regression**
-- **Decision Tree**
-- **Random Forest**
-- **Support Vector Machine (SVM)**
-- **Multinomial Naive Bayes**
+- Linear Regression: Establishing baseline relationships between variables.
+- Time Series Forecasting: Using models like ARIMA to predict future trends based on historical data.
+- Clustering Analysis: Grouping countries or time periods with similar characteristics.
+- Feature Engineering: Creating derived metrics like trade-to-GDP ratio or GDP per capita for enhanced analysis.
 
 ## 8. Final Model
 
-Grid search was used to fine-tune hyperparameters and improve model performance. Performance metrics such as accuracy, precision, recall, and F1-score were used to evaluate and compare models.
+The final model(s) were selected based on robust evaluation processes:
+
+Optimization of Parameters: Fine-tuning hyperparameters for better accuracy and predictive power.
+Validation: Using cross-validation techniques to ensure model generalization to unseen data.
+Evaluation Metrics: Models were assessed using R-squared, mean squared error (MSE), and other performance metrics.
+
+The selected model(s) demonstrated strong performance in explaining the variance in GDP and trade balance data and making reliable forecasts.
 
 ## 9. Conclusion and Future Work
 
-The automated news classification system effectively categorizes news articles into predefined categories, improving operational efficiency and user experience.
+The analysis of trade balance and GDP data offers valuable insights into economic trends and dependencies. This project highlights the importance of clean data and robust models in economic forecasting.
+
+Future Work:
+
+Dynamic Updates: Incorporate real-time data for more up-to-date forecasting and analysis.
+Advanced Econometric Models: Explore techniques like VAR (Vector Autoregression) for multivariate time series analysis.
+Scenario Analysis: Integrate scenario-based simulations to predict the impact of global events on trade and GDP.
+Interactive Visualization: Develop dashboards for stakeholders to interactively explore the data and findings.
 
 ## 10. References
 
-- Continuously update the model with new data to maintain accuracy.
-- Explore advanced NLP techniques like BERT for improved performance.
-- Integrate user feedback to refine and enhance the classification system.
+- World Bank Open Data: https://data.worldbank.org
+- OECD Economic Indicators: https://data.oecd.org
+- Introduction to Econometrics by James H. Stock and Mark W. Watson
